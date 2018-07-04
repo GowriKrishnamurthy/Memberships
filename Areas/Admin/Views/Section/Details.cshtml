@@ -23,6 +23,9 @@
 <p>
 
     <!-- Replace the button with the partial view class-->
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) 
+    <!-- @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |-->
+    <!-- @Html.ActionLink("Back to List", "Index")-->
+
+    @Html.Partial("_EditButtonPartial", Model.Id)
     @Html.Partial("_BackToListButtonPartial")
 </p>
